@@ -1,0 +1,52 @@
+#div1{
+    height:200px;
+    width:200px;
+    top:30%;
+    left:30%;
+ 
+    background-color: cyan;
+    position: absolute;
+    animation-name: bounce, rotate, reduceSize;
+    animation-duration: 0.7s, 0.7s, 0.7s;
+    animation-iteration-count: infinite, infinite, infinite;
+    animation-direction: alternate,alternate,alternate;
+}
+@keyframes bounce{
+    0%{
+        border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%;
+    }
+    100%{
+        border-radius: 50%;
+    }
+} 
+@keyframes rotate{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    from{
+        transform:rotate(360deg); 
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+@keyframes reduceSize{
+    from{
+         width:200px;
+         height:200px;
+    }
+    to{
+        width:100px;
+        height:100px;
+    }
+}
+ 
